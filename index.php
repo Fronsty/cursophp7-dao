@@ -25,11 +25,20 @@ require_once("config.php");
 // $aluno->insert();
 // echo $aluno;
 
+//Alterar usuario
+
+// $usuario = new Usuario();
+// $usuario->loadById(14);
+// $usuario->update("coordernador", ")(&*&&¨%¨¨%%");
+// echo $usuario;
+
+//Deletando usuários
+
 $usuario = new Usuario();
 
-$usuario->loadById(14);
+$usuario->loadById(4);
 
-$usuario->update("coordernador", ")(&*&&¨%¨¨%%");
+$usuario->delete();
 
 echo $usuario;
 ?>
